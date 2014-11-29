@@ -1,0 +1,41 @@
+.main-footer {
+	background: $main-footer-background;
+	color: $white;
+	padding: 3em;
+
+	@include cf();
+
+	box-shadow: 0 25px 40px 40px $black;
+	z-index: 10;
+
+	display: flex;
+	justify-content: space-between;
+
+	@include mq(900px) {
+		display: block;
+		font-size: 0.8em;
+	}
+
+	& > * {
+		flex-grow: 1;
+	}
+
+	p {
+		margin-bottom: 0;
+
+		@include mq(900px) {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+// .copyright {
+// 	float: left;
+// }
+
+@media (min-width: 900px) {
+	.credits p {
+	// 	float: right;
+		text-align: right;
+	}
+}

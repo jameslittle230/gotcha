@@ -1,0 +1,11 @@
+@mixin cf() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin mq($width) {
+	@media (max-width: $width) { @content; }
+}

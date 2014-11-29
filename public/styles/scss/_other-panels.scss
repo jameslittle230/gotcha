@@ -1,0 +1,50 @@
+.suspended__panel {
+	position: absolute;
+	width: 50%;
+	top: 10%;
+	left: 25%;
+	z-index: 20;
+	background: $white;
+	border: 3px solid $black;
+	border-radius: 7px;
+	box-shadow: 0 0 40px 0 $black,
+	0 0 0 2000px transparentize($black, 0.5);
+	padding: 1em;
+
+	@include mq(900px) {
+		width: 80%;
+		left: 10%;
+	}
+}
+
+.alert {
+	position: absolute;
+	width: 60%;
+	top: 5%;
+	left: 20%;
+	z-index: 30;
+	background: $red-900;
+	color: $white;
+	border: 2px solid $black;
+	border-radius: 11px;
+	box-shadow: 0 0 60px $red;
+	padding: 1em;
+	text-align: center;
+
+	@include mq(900px) {
+		width: 86%;
+		left: 7%;
+	}
+}
+
+.alert-success {
+	background: $green-900;
+	color: $white;
+	box-shadow: 0 0 60px $green;
+}
+
+.alert-warning {
+	background: $deepOrange-900;
+	color: $white;
+	box-shadow: 0 0 60px $orange;
+}

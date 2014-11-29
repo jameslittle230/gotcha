@@ -1,0 +1,50 @@
+.row {
+	// margin: 30px -15px;
+	// @include cf();
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-bottom: 1em;
+
+	@include mq(900px) {
+		display: block;
+	}
+
+	.game-actions__panel {
+		// flex-grow: 1;
+		width: 48%;
+
+		@include mq(900px) {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.row--4 {
+	@include mq(1250px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.game-actions__panel {
+		width: 23%;
+
+		@include mq(1250px) {
+			width: 48%;
+			float: left;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.game-actions__panel {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.column {
+	// padding: 0 15px;
+	// float: left;
+	// width: 50%;
+}

@@ -1,0 +1,15 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	position: relative;
+	transition: all 0.2s ease;
+}
+
+body {
+	font-family: $body-font-family;
+	line-height: 1.8;
+	font-size: 24px;
+
+	@include mq(500px) {
+		font-size: 0.8em;
+	}
+}

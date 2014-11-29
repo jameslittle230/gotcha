@@ -1,0 +1,105 @@
+.game {
+	display: flex;
+	align-items: stretch;
+
+	@include mq(900px) {
+		display: block;
+		font-size: 0.8em;
+	}
+}
+
+.game-actions {
+	background: $game-background;
+	padding: 30px;
+	width: 70%;
+	color: $white;
+	min-height: calc(100vh - 400px);
+
+	@include mq(900px) {
+		width: 100%;
+	}
+}
+
+.game-actions__panel {
+	text-align: center;
+	padding: 1em;
+	background: darken($indigo-900, 10);
+	color: $white;
+	text-shadow: 2px 2px 0 transparentize($black, 0.5);
+	font-size: 1em;
+	box-shadow: 0 0 20px 5px transparentize($black, 0.5);
+
+	p {
+		margin-bottom: 0;
+	}
+
+	li {
+		text-align: left;
+	}
+}
+
+.target {
+	color: $white;
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	text-shadow: 2px 2px 0 transparentize($black, 0.5);
+	font-size: 2em;
+	line-height: 1;
+	margin-bottom: 30px;
+	font-weight: 900;
+
+	@include mq(900px) {
+		line-height: 1;
+		margin-bottom: 30px;
+	}
+
+	span {
+		font-weight: 100;
+		margin-right: 0.1em;
+	}
+}
+
+.panel__code {
+	font-size: 2em;
+	font-weight: 900;
+	line-height: 1;
+	margin-bottom: 0.3em;
+	font-family: "Source Sans Pro", monospace;
+}
+
+.panel--stats {
+	text-align: left;
+
+	h1 {
+		font-size: 0.8em;
+		font-family: $body-font-family;
+	}
+
+	text-transform: uppercase;
+	color: $gray-200;
+
+	p {
+		font-size: 0.5em;
+
+		&.data {
+			font-size: 2em;
+			font-weight: 200;
+			margin-bottom: 0;
+			line-height: 1;
+		}
+	}
+}
+
+.data {
+	
+}
+
+.panel__info {
+	font-size: 0.6em;
+	text-transform: uppercase;
+}
+
+.help {
+	font-size: 0.8em;
+}

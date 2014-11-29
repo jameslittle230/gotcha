@@ -1,0 +1,61 @@
+.user-box {
+	background: $user-box-background;
+	border-right: 2px solid darken($user-box-background, 20);
+
+	padding: 30px;
+
+	width: 30%;
+	@include cf();
+
+	@include mq(900px) {
+		width: 100%;
+		font-size: 0.8em;
+	}
+	// float: left;
+
+	h1 {
+		color: $white;
+		text-shadow: 0px 0px 7px $black;
+		font-weight: 300;
+		margin-bottom: 0.1em;
+	}
+
+	h2 {
+		@extend %subtle-header;
+		margin-top: 2em;
+
+		@include mq(900px) {
+			margin-top: 0;
+		}
+	}
+
+	@include mq(900px) {
+		.banned-section, .strikes-section {
+			width: 47%;
+			float: left;
+		}
+	}
+
+}
+
+.strikes {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.strike {
+	width: 1em;
+	height: 1em;
+
+	display: inline-block;
+	margin-right: 0.3em;
+	
+	border-radius: 0.5em;
+	background: $red;
+	border: 3px solid $red;
+}
+
+.strike--no {
+	background: none;
+}
