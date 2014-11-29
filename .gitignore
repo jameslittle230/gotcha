@@ -1,0 +1,14 @@
+*.sqlite
+*.csv
+*.sublime-project
+*.sublime-workspace
+composer.lock
+
+storage
+database
+node_modules
+vendor
+
+.sass-cache
+
+.DS_Store
