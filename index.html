@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Gotcha Sample Index</title>
+	<title>Gotcha</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,9 +23,9 @@
 
 		<nav class="main-nav">
 			<a class="main-nav__item main-nav__item--active" href="gotcha.html">Capture</a>
-			<a class="main-nav__item " href="stats.html">Statistics</a>
-			<a class="main-nav__item " href="rules.html">The Rules</a>
-			<a class="main-nav__item " href="about.html">About</a>
+			<a class="main-nav__item " href="#">Statistics</a>
+			<a class="main-nav__item " href="#">The Rules</a>
+			<a class="main-nav__item " href="#">About</a>
 			<a class="main-nav__item" href="#">Log Out</a>
 		</nav>
 	</header>
@@ -36,26 +36,8 @@
 		</aside>
 
 		<section class="game-actions">
-			<a href="gotcha.html" style="
-					background: green;
-					display: block;
-					color: white;
-					font-size: 1.4em;
-					text-align: center;
-					text-decoration: none;
-					border: 5px solid forestgreen;
-					margin-bottom: 1em
-				">Enter the game &rarr;</a>
-			<p>The point of Gotcha is to tag as many students on campus as 
-			  possible without being tagged yourself.</p>
-			<p>This program sets up everyone with a <em>tag code</em>, which is 
-			  a unique identifier that people should keep secret. Each person 
-			  also has a <em>target</em>. The program is designed to randomly 
-			  assign targets in a loop, so each person will have a unique 
-			  target throughout the entire game. When you tag your target, your 
-			  target gives you his tag code. When you enter the tag code into 
-			  the website, it marks the target as <em>tagged</em> and gives you 
-			  your new target.</p>
+			<h1>Gotcha is currently not active.</h1>
+			<p>There is nothing for you here.</p>
 		  </section>
 	</section> <!-- game -->
 
@@ -73,34 +55,8 @@
 	---- inlined to minimize the number of HTTP requests that the browser
 	---- makes, which will reduce load times all around. -->
 
-	<script type="text/javascript">
-		setTimeout(function(){fadeOutAlerts()}, 5000);
-
-		function fadeOut(el) {
-			el.style.opacity = 1;
-
-			var last = +new Date();
-			var tick = function() {
-				el.style.opacity = +el.style.opacity - (new Date() - last) / 400;
-				last = +new Date();
-
-				if (+el.style.opacity > 0) {
-					(window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
-				}
-			};
-
-			tick();
-		}
-
-		function fadeOutAlerts() {
-			var alerts = document.querySelectorAll(".alert");
-		
-			for (var i = 0, length = alerts.length; i < length; i++) {
-			 	console.log(alerts[i]);
-			 	fadeOut(alerts[i]);
-			 }
-		}
-	</script>
+	
+	
 	
 </body>
 
